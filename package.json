@@ -2,11 +2,12 @@
   "name": "phenyl-temp",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "type-check": "tsc --noEmit"
+  },
   "dependencies": {
-    "@phenyl/interfaces": "1.0.1",
-    "@phenyl/http-client": "1.0.1",
-    "@phenyl/memory-db": "1.0.1",
-    "@phenyl/rest-api": "1.0.1",
+    "@phenyl/interfaces": "1.2.0",
+    "@phenyl/http-client": "1.2.0",
     "express": "^4.17.1",
     "raw-body": "^2.4.1"
   },

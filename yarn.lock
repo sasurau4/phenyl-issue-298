@@ -2,26 +2,17 @@
 # yarn lockfile v1
 
 
-"@phenyl/central-state@^1.0.1":
+"@phenyl/http-client@1.2.0":
   version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@phenyl/central-state/-/central-state-1.2.0.tgz#f4869c5eb61e3c0c53befdeb5e48e37049975015"
-  integrity sha512-XalgNyk37T8t+Q4spXQK+kYRbMS3mEBQwonWOxTJdJdBQclv+HDrZ2WnLVHSWFE+k/7+GpSMrn4SQ7sy9curLg==
+  resolved "https://registry.yarnpkg.com/@phenyl/http-client/-/http-client-1.2.0.tgz#14114d78314fa9a14fe695d0d9d0b4aef6b8b900"
+  integrity sha512-4bxmLjtTWSu+5ZOT7sk7X4i1y3kbmDgFQb+sr1Jxz82wq8/YDH9Mx+wEG6CPb2yutu72ff/fE9Zz4Lfpi6GKlA==
   dependencies:
+    "@phenyl/http-rules" "^1.2.0"
     "@phenyl/interfaces" "^1.2.0"
     "@phenyl/utils" "^1.2.0"
-    sp2 "^1.5.1"
-
-"@phenyl/http-client@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@phenyl/http-client/-/http-client-1.0.1.tgz#6d9b193022dbad13fa459d1adba3bf223740a974"
-  integrity sha512-a5/adVsfVxoFk+9e9bO8oLqaBRRHyrhCiCuLOHhsILGAIsBaHUE9QpB1PFYsJ7BPbjXEKJYzvh0LJRjDloDPjA==
-  dependencies:
-    "@phenyl/http-rules" "^1.0.1"
-    "@phenyl/interfaces" "^1.0.1"
-    "@phenyl/utils" "^1.0.1"
     cross-fetch "^3.0.2"
 
-"@phenyl/http-rules@^1.0.1":
+"@phenyl/http-rules@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@phenyl/http-rules/-/http-rules-1.2.0.tgz#0cd57971b10a51d1f8c8b44817116bb8eb7bc0bc"
   integrity sha512-AVA1146OfzF70kCBlD/PVCsgSNKRoWMqiI6KC8fE+hsh6Sr5fuM3P+dudwRJEE5m3Me+e/RcCGrWRRA3dxyXGg==
@@ -29,49 +20,14 @@
     "@phenyl/interfaces" "^1.2.0"
     "@phenyl/utils" "^1.2.0"
 
-"@phenyl/interfaces@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@phenyl/interfaces/-/interfaces-1.0.1.tgz#406e44307750c9c7f6cf4195f405db02d83a7a18"
-  integrity sha512-F9yMMbKYDnx+43/dW7XduY7L5afE37kh6wJ70n7hl6xTxwgubRa2Y6PruTZrHrG11+llCUmbonVWnuOyCJiubA==
-  dependencies:
-    sp2 "^1.5.1"
-
-"@phenyl/interfaces@^1.0.1", "@phenyl/interfaces@^1.2.0":
+"@phenyl/interfaces@1.2.0", "@phenyl/interfaces@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@phenyl/interfaces/-/interfaces-1.2.0.tgz#d6f67f90d3f6b2467c1e3574f8659b2f1555da15"
   integrity sha512-YwGnp4NAepYXImgD7tLxDEqRk1F9UwByDsFqo4+yu52f6RppLP/njv2QUb4xtgAlfkfpZSDlGSkgIbsgIS4q0g==
   dependencies:
     sp2 "^1.5.1"
 
-"@phenyl/memory-db@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@phenyl/memory-db/-/memory-db-1.0.1.tgz#76d7b56f2cda64c7d3336a6e846d822be015abd6"
-  integrity sha512-V1TdSPzlnURSLGB8fCrYYextOmjXxsTk6J0X5TLBVU6cBk9Cof+femG9t/hTk43a3icc4f+XMpKYw/lGVq64IA==
-  dependencies:
-    "@phenyl/central-state" "^1.0.1"
-    "@phenyl/interfaces" "^1.0.1"
-    "@phenyl/state" "^1.0.1"
-    "@phenyl/utils" "^1.0.1"
-    sp2 "^1.5.1"
-
-"@phenyl/rest-api@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@phenyl/rest-api/-/rest-api-1.0.1.tgz#cd7a6005a9bb943ebc9115ee75b13bc0f7cc0d77"
-  integrity sha512-LN/+1s8yg26xQN7asktQxm676UzJb2N+pDgGAn5x8Uv+1FloaY7VussXMKea2yMUkkdfwBD5DvFdQqHXo95Rzw==
-  dependencies:
-    "@phenyl/central-state" "^1.0.1"
-    "@phenyl/interfaces" "^1.0.1"
-    "@phenyl/utils" "^1.0.1"
-
-"@phenyl/state@^1.0.1":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@phenyl/state/-/state-1.2.0.tgz#4dc3670df61e662c620ed343287fe78f5e3a69c2"
-  integrity sha512-UwFIW5C5KqQwD/5eem9ipifF9owI8rJvlP8UH+ykfHV0LXFD3KPsV6tnk7yIEzzBSBURrhnPDCIwJpQP3tHcPw==
-  dependencies:
-    "@phenyl/interfaces" "^1.2.0"
-    sp2 "^1.5.1"
-
-"@phenyl/utils@^1.0.1", "@phenyl/utils@^1.2.0":
+"@phenyl/utils@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@phenyl/utils/-/utils-1.2.0.tgz#3d9a6190da7ec560f0419b41f8ed9df4af060b89"
   integrity sha512-9DRRF9BdKqvMOGUXka/vRUy/5RVw5glzwwtrmK5QFAM2QS7XexV0mD9ap1ZHdJ0P77mVlQvmY5BdsJSE1VsY8g==
